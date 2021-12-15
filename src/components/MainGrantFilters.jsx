@@ -11,7 +11,6 @@ const MainGrantFilters = () => {
             { id: 0, label_item: "Item 1" },
             { id: 1, label_item: "Item 2" },
           ]}
-          key="uniqueId1"
         />
         <GrantFilterItem
           name="Review Status"
@@ -19,7 +18,6 @@ const MainGrantFilters = () => {
             { id: 0, label_item: "Item 2" },
             { id: 1, label_item: "Item 3" },
           ]}
-          key="uniqueId2"
         />
         <GrantFilterItem
           name="Payment Status"
@@ -27,7 +25,6 @@ const MainGrantFilters = () => {
             { id: 0, label_item: "Item 4" },
             { id: 1, label_item: "Item 5" },
           ]}
-          key="uniqueId3"
         />
         <GrantFilterItem
           name="Ball in Count"
@@ -35,7 +32,6 @@ const MainGrantFilters = () => {
             { id: 0, label_item: "Item 6" },
             { id: 1, label_item: "Item 7" },
           ]}
-          key="uniqueId4"
         />
         {/* Submit Button */}
         <button

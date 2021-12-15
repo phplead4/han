@@ -16,17 +16,7 @@ const GrantFilterItem = (props) => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
     setOpen(false);
   };
-  // const select_val = items2.map((item_val) => {
-  //   return(
-  //     <div
-  //     className="dropdown-item mb-2"
-  //     onClick={(event) => handleItemClick(event.target.id)}
-  //     id={item_val.id}
-  //   >
-  //     {item_val.label}
-  //   </div>
-  //   );
-  // });
+ 
   return (
     <>
       <div className="dropdown m-4 relative">
@@ -63,7 +53,7 @@ const GrantFilterItem = (props) => {
         >
           {/* Get data and handle click function */}
           {items.map((item) => (
-            <div
+            <div key={ Math.random().toString(36).substr(2, 9) }
               className="dropdown-item mb-2"
               onClick={(e) => handleItemClick(e.target.id)}
               id={item.id}
